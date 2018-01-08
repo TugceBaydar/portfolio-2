@@ -5,7 +5,6 @@ body {
 }
 /* ---------------------nav bar------------------- */
 #navbar {
-  /*height:100px;*/
   font-family: 'Marck Script', cursive;
   font-size: 18px;
   padding-top: 5%;
@@ -81,10 +80,8 @@ hr {
 .jumbotron {
   width:70%;
   margin-top:10%;
-  background-color: #081119c4;
-  opacity: 0.4;
-  color:white;
-
+  background-color: rgba(8, 17, 25, 0.5);
+  color:rgba(255, 255, 255, 0.76);
 }
 
 .jumbotron .btn-primary.btn-lg {
@@ -97,8 +94,10 @@ hr {
 
 #about {
   width:70%;
-  background-color: #081119c4;
+  background-color: rgba(8, 17, 25, 0.5);
   padding:6% 3%;
+  line-height: 190%;
+  color:rgba(255, 255, 255, 0.76);
 }
 
 #about h2 {
