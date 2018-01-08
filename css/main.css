@@ -1,0 +1,158 @@
+body {
+  background: url(http://www.dallaschess.com/images/chessBackground.png) no-repeat center center fixed;
+  background-size: cover;
+  height: 3000px;
+}
+/* ---------------------nav bar------------------- */
+#navbar {
+  /*height:100px;*/
+  font-family: 'Marck Script', cursive;
+  font-size: 18px;
+  padding-top: 5%;
+  width: 80%;
+  text-align: center;
+}
+
+#navbar > ul {
+  position: relative;
+  top: 15px;
+  left: 0;
+}
+
+#navbar .navbar-brand,
+    #navbar li > a {
+  color: white;
+}
+
+#navbar #ul {
+  display: inline;
+}
+
+#navbar li {
+  display: inline-block;
+  padding-right: 5%;
+}
+
+#navbar li .active {
+  opacity: 0.5;
+}
+
+#navbar li > a {
+  text-decoration: none;
+}
+/* ul li:hover ul {
+  display: block;
+} */
+/* ul li ul {
+  position: absolute;
+  width: 200px;
+  display: none;
+  padding-left: 0px;
+} */
+/* ul li ul li {
+  padding:10px;
+  display: block;
+  background-color: black;
+  width:130px;
+} */
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 0.5px;
+}
+
+
+.classnav .icon {
+  display: none;
+}
+
+/* ---------------------------nav bar ends--------------------- */
+
+/* ---------------middle section---------------- */
+
+.container {
+  height: 80%;
+}
+/* .................title................ */
+.jumbotron {
+  width:70%;
+  margin-top:10%;
+  background-color: #081119c4;
+  opacity: 0.4;
+  color:white;
+
+}
+
+.jumbotron .btn-primary.btn-lg {
+  background-color: #081119c4;
+  margin-top:10%;
+  border: none;
+}
+/*
+ .....................about .................. */
+
+#about {
+  width:70%;
+  background-color: #081119c4;
+  padding:6% 3%;
+}
+
+#about h2 {
+  font-size:25px;
+  padding-bottom: 3%;
+}
+
+#about button {
+  background-color: #07323ccf;
+  border:none;
+  margin-top: 3%;
+}
+
+/* .......................skills....................... */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------middle section ends---------------- */
+
+
+/* ............mediaqueries------------------------ */
+
+@media (max-width:600px) {
+  .classnav ul>li>a {
+    display: none;
+  }
+  .classnav a.icon {
+    float: right;
+    display: block;
+    color:white;
+}
+@media screen and (max-width: 600px) {
+  .classnav.responsive {
+    position: relative;
+  }
+  .classnav.responsive .icon {
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+  #navbar.classnav.responsive ul>li, .classnav.responsive ul>li>a  {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
