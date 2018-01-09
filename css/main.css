@@ -1,7 +1,8 @@
 body {
   background: url(http://www.dallaschess.com/images/chessBackground.png) no-repeat center center fixed;
   background-size: cover;
-  height: 5000px;
+  height: 3800px;
+
 }
 /* ---------------------nav bar------------------- */
 #navbar {
@@ -40,21 +41,7 @@ body {
 #navbar li > a {
   text-decoration: none;
 }
-/* ul li:hover ul {
-  display: block;
-} */
-/* ul li ul {
-  position: absolute;
-  width: 200px;
-  display: none;
-  padding-left: 0px;
-} */
-/* ul li ul li {
-  padding:10px;
-  display: block;
-  background-color: black;
-  width:130px;
-} */
+
 hr {
     display: block;
     margin-top: 0.5em;
@@ -154,13 +141,25 @@ hr.style2 {
   margin-top:5%;
 }
 
+.skills_progress > hr {
+  border: 1px solid #07323ccf;
+  color: rgba(8, 17, 25, 0.5);
+  width:10%;
+  margin:8px  0;
+}
+
 .skills_progress .fa {
   font-size: 40px;
   padding-left: 20px;
+  color: rgba(21, 123, 146, 0.32);
 }
 
 .skills_progress>h3 {
   font-size: 20px;
+}
+
+.skills_progress > p {
+  font-size: 14px;
 }
 
 .skills_progress>h3,
@@ -308,7 +307,8 @@ hr.style2 {
 /* ....................footer......................... */
 
 #footer {
-  margin-top: 10%;
+  margin-top: 12%;
+  margin-left: 2%;
 
 }
 
@@ -324,6 +324,15 @@ hr.style2 {
   color:#044958;
 
 }
+
+#quotes {
+  left: 750px;
+  bottom: 80px;
+  color:white;
+  font-size: 15px;
+}
+
+
 
 /* ......................footer ends...................... */
 
@@ -358,5 +367,10 @@ hr.style2 {
    #title, #about_wrap {
      padding-left: 3%;
      padding-right: 3%;
+   }
+ }
+ @media (max-width:768px) {
+   body {
+     height:4000px;
    }
  }
