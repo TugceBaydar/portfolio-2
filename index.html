@@ -21,11 +21,14 @@
 	</head>
 	<body>
 		<!-- navbar -->
-		 <nav id="navbar" class="classnav">
+	 <header>
+		<div class="row">
+		 <nav id="navbar" class="classnav col-md-9 col-lg-8 col-xl-8">
 
 				 <!-- <div>
 					 <a class="navbar-brand" href="#">Tugce ' s Portfolio</a>
 			   </div> -->
+
 				 <ul id="ul">
 						 <li><a href=""><hr>Home</a></li>
 						 <li><a href=""><hr>About</a></li>
@@ -42,37 +45,139 @@
 						 <li><a href=""><hr>Contact</a></li>
 						 <li><a href=""><hr>Resume</a></li>
 			  </ul>
-				 <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-		</nav>
+				<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+	   </nav>
+	  </div>
+   </header>
 		<!-- navbar ends -->
 		<section class="container">
-			<div id="title">
-					<div class="jumbotron">
-						  <h1 class="display-3">TUGCE BAYDAR</h1>
-						  <hr class="my-4">
-						  <p>Engineer , Web Designer , Front-End Developer</p>
-						  <p class="lead">
-						    <a class="btn btn-primary btn-lg" href="#" role="button">Contact Me</a>
-						  </p>
+			 <div class="row">
+				 <!-- ........................title................... -->
+					<div id="title" class="col-md-8">
+							<div class="jumbotron">
+								  <h1 class="display-3">TUGCE BAYDAR</h1>
+								  <hr class="my-4">
+								  <p>Engineer , Web Designer , Front-End Developer</p>
+								  <p class="lead">
+								    <a class="btn btn-primary btn-lg" href="#" role="button">Contact Me</a>
+								  </p>
+							</div>
 					</div>
-			</div>
-			<div id="about">
-				  <h2>About Me</h2>
-					<p>I am skilled in making users explore every visible element on web page and interact with the web administrator. I am not just the master of coding, but also have a knack for <i>creativity</i> when it comes to creating appealing web pages.
-					To create digital magic, one must have a deep sense of layout elements and <i>good hand in programming</i>, Which I posses as a skill. I have knowledge of <b>user interface, CSS, HTML, PHP, and JavaScript</b> which are required to use web technologies.
-					I am a front-end engineer with keen eye for web design, development process and deployment. I am also aware of the latest happenings in the digital world and content management systems as a front-end web developer.
-          </p>
-					<button type="button" class="btn btn-primary">Dowloand CV</button>
-			</div>
-			<!-- <div id="my-skills">
-				<h3>Design<i class="fa fa-paint-brush color1"></i></h3>
-				<h3>Branding<i class="fa fa-tag color1"></i></h3>
-				<h3>Development<i class="fa fa-code color1"></i></h3>
-			</div> -->
+					<!-- ......................about...................... -->
+					<div id="about_wrap">
+					 <div id="about" class="col-md-8">
+						  <h2><span class="sfl" style="font-size:34px;">A</span>bout Me</h2>
+							<hr>
+							<p>I am skilled in making users explore every visible element on web page and interact with the web administrator. I am not just the master of coding, but also have a knack for <i>creativity</i> when it comes to creating appealing web pages.
+							To create digital magic, one must have a deep sense of layout elements and <i>good hand in programming</i>, Which I posses as a skill. I have knowledge of <b>user interface, CSS, HTML, PHP, and JavaScript</b> which are required to use web technologies.
+							I am a front-end engineer with keen eye for web design, development process and deployment. I am also aware of the latest happenings in the digital world and content management systems as a front-end web developer.
+		          </p>
+							<button type="button" class="btn btn-primary"><a href="">Dowloand CV</a></button>
+					 </div>
+				  </div>
+					<!-- ................................skills...................... -->
+
+                   <!-- make it here responsive !!!! -->
+
+					<div id="skills" class="col-md-8">
+						 <h2><span class="sfl">S</span>kills</h2>
+						 <hr class="style2">
+						 <div class="skills_progress">
+								<h3>Design<i class="fa fa-paint-brush color1"></i></h3>
+								<div class="progress">
+										<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 100%;">
+										<span>100%</span>
+								    </div>
+								</div>
+					    </div>
+						  <div class="skills_progress">
+								<h3>Branding<i class="fa fa-tag color1"></i></h3>
+								<div class="progress">
+										<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 100%;">
+										<span>100%</span>
+								    </div>
+								</div>
+					   	 </div>
+						   <div class="skills_progress">
+								<h3>Development<i class="fa fa-code color1"></i></h3>
+								<div class="progress">
+										<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 100%;">
+										<span>100%</span>
+								    </div>
+							 	</div>
+						   </div>
+				    </div>
+							<!-- ................. experience .....................-->
+						<div id="experience" class="col-md-8">
+							<h2><span class="sfl">E</span>xperience</h2>
+ 						  <hr class="style2">
+               <div class="row">
+									<div class="box col-md-6">
+										<h3><span class="fl">T</span>EACHING <span class="fl">A</span>SSISTANT</h3>
+										<h6>2017-2018</h6>
+										<p>I Am Currently A Teaching Assistant(TA) At Codify Academy. I Work With The Mentor To Help Reinforce The Lessons By Working With Individual Students. I Help A Small Group Of Students As They Try To Master The Material.</p>
+									</div>
+									<div class="box col-md-6">
+										<h3><span class="fl">F</span>REELANCE <span class="fl">F</span>RONT-END <span class="fl">E</span>NGINEER</h3>
+										<p>I Am A Freelancer Front-End Engineer. As A Freelancer I Do Projects For My Clients And Utilize The Rest Of My Time In Developing And Improvising My Skills.</p>
+									</div>
+									<div class="box col-md-6">
+										<h3><span class="fl">S</span>TUDENT <span class="fl">D</span>EVELOPER</h3>
+										<p>I Have Been Also A Student Developer In Codify Academy.</p>
+									</div>
+									<div class="box col-md-6">
+										<h3><span class="fl">I</span>NDUSTRIAL <span class="fl">E</span>NGINEER</h3>
+										<h6>2011-2015</h6>
+										<p>I Majored In Industrial Engineering And Completed My Bachelor Degree In 2015.</p>
+									</div>
+               </div>
+						 </div>
+							 <!-- .................my works................ -->
+
+							 <div id="myworks" class="col-md-8">
+								 <h2><span class="sfl">M</span>y Works</h2>
+	  						  <hr class="style2">
+							 </div>
+
+							 <!-- ...........................contact........................ -->
+
+							 <div id="contact" class="col-md-8">
+								 <h2><span class="sfl">C</span>ontact</h2>
+	  						  <hr class="style2">
+							 </div>
 
 
 
-		</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <!-- ............................................. -->
+				</div>
+	  </section>
 
 
 
