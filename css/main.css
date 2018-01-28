@@ -1,16 +1,165 @@
 body {
-  background: url(http://www.dallaschess.com/images/chessBackground.png) no-repeat center center fixed;
+  background: url(../img/bg.png) no-repeat center center fixed;
   background-size: cover;
   height: 3800px;
-
 }
+
+.to_top{
+    position: fixed;
+    display: none;
+    bottom: 10px;
+    right: 15px;
+    z-index: 999;
+    font-size: 1.8em;
+    padding: 4px 12px 1px 12px;
+    text-align: center;
+    background-color: #000;
+    color: #cfe2f1;
+    cursor: pointer;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    opacity: 0.5;
+    border: 1px solid #333;
+}
+.to_top.active{
+    display: block;
+}
+.to_top:hover{
+    background-color: #000;
+    color: #fff;
+    opacity: 1;
+    border-color: #fff;
+}
+/* ---------------------preloader------------------- */
+.preloader{
+    position: fixed;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    z-index: 1031;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+.preloader .circls{
+    position: absolute;
+    top: calc(50% - 35px);
+    left: calc(50% - 35px);
+    width: 70px;
+    height: 70px;
+}
+.preloader .circls>span{
+    position: absolute;
+    top:25%;
+    left:25%;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: white;
+
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function:linear;
+    animation-timing-function:linear;
+}
+.preloader .circle1{
+    -webkit-animation-name: load;
+    animation-name: load;
+}
+.preloader .circle2{
+    -webkit-animation-name: load2;
+    animation-name: load2;
+}
+@keyframes load{
+    0% {
+        -webkit-transform:rotateZ(0deg) translate(25px,0);
+        transform:rotateZ(0deg) translate(25px,0)
+    }
+    33% {
+        -webkit-transform:rotateZ(120deg) translate(25px,25px);
+        transform:rotateZ(120deg) translate(25px,25px)
+    }
+    67% {
+        -webkit-transform:rotateZ(240deg) translate(0,25px);
+        transform:rotateZ(240deg) translate(0,25px)
+    }
+    100%{
+        -webkit-transform:rotateZ(360deg) translate(25px,0);
+        transform:rotateZ(360deg) translate(25px,0)
+    }
+}
+@-webkit-keyframes load{
+    0% {
+        -webkit-transform:rotateZ(0deg) translate(25px,0);
+        transform:rotateZ(0deg) translate(25px,0)
+    }
+    33% {
+        -webkit-transform:rotateZ(120deg) translate(25px,25px);
+        transform:rotateZ(120deg) translate(25px,25px)
+    }
+    67% {
+        -webkit-transform:rotateZ(240deg) translate(0,25px);
+        transform:rotateZ(240deg) translate(0,25px)
+    }
+    100%{
+        -webkit-transform:rotateZ(360deg) translate(25px,0);
+        transform:rotateZ(360deg) translate(25px,0)
+    }
+}
+
+@keyframes load2{
+    0% {
+        -webkit-transform:rotateZ(0deg) translate(25px,25px);
+        transform:rotateZ(0deg) translate(25px,25px)
+    }
+    33% {
+        -webkit-transform:rotateZ(120deg) translate(0,25px);
+        transform:rotateZ(120deg) translate(0,25px)
+    }
+    67% {
+        -webkit-transform:rotateZ(240deg) translate(25px,0);
+        transform:rotateZ(240deg) translate(25px,0)
+    }
+    100%{
+        -webkit-transform:rotateZ(360deg) translate(25px,25px);
+        transform:rotateZ(360deg) translate(25px,25px)
+    }
+}
+@-webkit-keyframes load2{
+    0% {
+        -webkit-transform:rotateZ(0deg) translate(25px,25px);
+        transform:rotateZ(0deg) translate(25px,25px)
+    }
+    33% {
+        -webkit-transform:rotateZ(120deg) translate(0,25px);
+        transform:rotateZ(120deg) translate(0,25px)
+    }
+    67% {
+        -webkit-transform:rotateZ(240deg) translate(25px,0);
+        transform:rotateZ(240deg) translate(25px,0)
+    }
+    100%{
+        -webkit-transform:rotateZ(360deg) translate(25px,25px);
+        transform:rotateZ(360deg) translate(25px,25px)
+    }
+}
+
 /* ---------------------nav bar------------------- */
 #navbar {
   font-family: 'Marck Script', cursive;
   font-size: 18px;
   padding-top: 5%;
-  width: 100%;
+  width: 100vw;
   text-align: center;
+  top:-28px;
 
 }
 
@@ -55,9 +204,120 @@ hr {
 
 .classnav .icon {
   display: none;
+  z-index: 999;
 }
 
 /* ---------------------------nav bar ends--------------------- */
+
+/* ========================================================== */
+/* ---------------------------more-info page ---------------------- */
+
+#moreInfo {
+  top:40px;
+}
+
+#topSec {
+  border: 3px solid white;
+  padding:10px;
+  border-right: none;
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#pictures {
+  text-align: center;
+}
+
+#pictures #img1 {
+  object-fit: cover;
+  width:500px;
+  height: 600px;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+
+#topSec article {
+ background-color: #080808;;
+ opacity: 0.3;
+}
+
+article  span {
+  font-size: 80px;
+  font-family: 'Marck Script', cursive;
+  padding-bottom: -20px;
+}
+
+article > h1 {
+  line-height: 1.5;
+  letter-spacing: 1px;
+  /* text-indent: 1.3em; */
+  padding:35px;
+
+
+}
+#topSec article > h1 {
+    color:white;
+}
+
+article > p {
+  padding: 25px;
+}
+
+#middleSec {
+  margin-top:10%;
+  border: 3px solid white;
+  padding:30px;
+  border-left: none;
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+#middleSec #img8 {
+  object-fit: cover;
+  width:500px;
+  height: 600px;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+
+#middleSec article {
+  /* background-color: rgba(138, 160, 165, 0.6); */
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+#buttomSec {
+  border: 3px solid white;
+  padding:40px;
+  border-right: none;
+  border-bottom-right-radius: 100px;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-top: 10%;
+
+}
+
+#buttomSec #img7 {
+  object-fit: cover;
+  width:900px;
+  height: 500px;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+
+#buttomSec article {
+  /* background-color: rgba(158, 135, 39, 0.65); */
+  border-radius: 5px;
+}
+/* -------------------------end more-info page---------------------------- */
+/* =============================================================================== */
+
 
 /* ---------------middle section---------------- */
 
@@ -119,6 +379,14 @@ hr {
   color: rgba(255, 255, 255, 0.76);
 }
 
+#about #moreinfo {
+  top:1vw;
+}
+
+#about #moreinfo > a {
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 0.76);
+}
 /* .......................skills....................... */
 
 #skills > h2 {
@@ -240,6 +508,10 @@ hr.style2 {
   font-size:30px;
 }
 
+/* #myworks > a {
+  text-decoration: none;
+
+} */
 /* ..........................contact.......................... */
 
 #contact {
@@ -349,10 +621,7 @@ hr.style2 {
   cursor: default;
 }
 
-#quotes {
-  left: 750px;
-  margin-top: 20px;
-  bottom: 80px;
+#quotes p {
   color:white;
   font-size: 15px;
 }
@@ -363,39 +632,51 @@ hr.style2 {
 
 /* ............mediaqueries------------------------ */
 
-@media (max-width:600px) {
+ @media (max-width:600px) {
   .classnav ul>li>a {
     display: none;
   }
-  .classnav a.icon {
-    float: right;
+  .classnav .icon {
+    right: 2vw;
+    top: 8vh;
     display: block;
     color:white;
-}
-@media screen and (max-width: 600px) {
+    position:absolute;
+    z-index: 999;
+ }
   .classnav.responsive {
     position: relative;
+
   }
   .classnav.responsive .icon {
-    position: fixed;
-    right: 5;
-    top: 5;
+    position: absolute;
+
   }
-  #navbar.classnav.responsive ul>li, .classnav.responsive ul>li>a  {
+   #navbar.classnav.responsive ul>li, .classnav.responsive ul>li>a  {
     float: none;
     display: block;
     text-align: left;
     padding-left: 3%;
   }
-}
+ }
  @media (max-width: 575px) {
    #title, #about_wrap {
      padding-left: 3%;
      padding-right: 3%;
    }
  }
- @media (max-width:768px) {
+ @media (max-width:770px) {
    body {
-     height:4000px;
+     height:100%;
    }
+
+    #quotes {
+      margin-top: 8%;
+    }
  }
+
+@media (max-width: 557px) {
+  #about #moreinfo {
+
+  }
+}
