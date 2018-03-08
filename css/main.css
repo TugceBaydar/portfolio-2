@@ -1,7 +1,7 @@
 body {
   background: url(../img/bg.png) no-repeat center center fixed;
   background-size: cover;
-  height: 3800px;
+  height: 120%;
 }
 
 audio {
@@ -163,7 +163,7 @@ audio {
   padding-top: 5%;
   width: 100vw;
   text-align: center;
-  top:-55px;
+  top:-28px;
 
 }
 
@@ -228,6 +228,67 @@ hr {
   border-top-right-radius: 100px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+}
+.midiv {
+  height:860px;
+  /* background-color: rgba(175, 175, 162, 0.18); */
+  font-size:36px;
+  mix-blend-mode: hard-light;
+  margin-top: 20%;
+}
+
+.midiv img {
+  /* border-radius: 40%; */
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+blockquote {
+  margin-top: -10%;
+  text-align: center;
+  padding-left: 3%;
+  padding-right: 3%;
+  mix-blend-mode: lighten;
+  color: #ffffffab;
+  font-size: 24px;
+  font-family: 'Caveat', cursive;
+}
+
+.midiv2 {
+  margin-top: 21%;
+}
+
+.midiv2 blockquote {
+  color: #ffffffab;
+  font-size: 29px;
+  font-family: 'Caveat', cursive;
+}
+
+.midiv3 {
+  mix-blend-mode: lighten;
+}
+
+.midiv3 img {
+  height:1250px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  margin-top: 10%;
+}
+.midiv4 {
+  mix-blend-mode: lighten;
+  margin-top: -5%;
+}
+
+.midiv4 img  {
+  width: 100%;
+  object-fit: cover;
+}
+
+.end {
+  margin-top: 15%;
+  font-size: 29px;
 }
 
 #pictures {
@@ -319,6 +380,38 @@ article > p {
   /* background-color: rgba(158, 135, 39, 0.65); */
   border-radius: 5px;
 }
+
+/* .parallax { */
+    /* The image used */
+    /* background-image: url("images/me-ocean.png"); */
+
+    /* Set a specific height */
+    /* min-height: 500px; */
+
+    /* Create the parallax scrolling effect */
+    /* background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+/* } */
+/*
+.parallax2 {
+  background-image: url("images/img7.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+} */
+/*
+#ara {
+    min-height: 800px;
+    background-color: #fff;
+}
+
+.parallax-container {
+  height: 600px;
+} */
 /* -------------------------end more-info page---------------------------- */
 /* =============================================================================== */
 
@@ -329,7 +422,7 @@ article > p {
   height: 80%;
   /* position:relative; */
   color:rgba(255, 255, 255, 0.76);
-  top:-40px;
+  top:-20px;
 }
 /* .................title................ */
 #title {
@@ -392,6 +485,20 @@ article > p {
   text-decoration: underline;
   color: rgba(255, 255, 255, 0.76);
 }
+
+#eklemeli h1, #eklemeli h2 {
+  font-weight: 100;
+  margin: 0.4em 0;
+  text-align: center;
+
+
+}
+#eklemeli h1 { font-size: 2em; }
+#eklemeli h2 {
+  color: #888;
+  font-size: 1.5em;
+}
+
 /* .......................skills....................... */
 
 #skills > h2 {
@@ -559,6 +666,7 @@ hr.style2 {
      border-bottom: 1px solid white;
      height: 53px;
      width:100%;
+     color:white;
 }
 
 #contact textarea {
@@ -634,6 +742,133 @@ hr.style2 {
 
 
 /* ......................footer ends...................... */
+
+/*----------------------------------------------
+*   my works
+*----------------------------------------------*/
+.works .works_control{
+    padding: 30px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.works .works_control button{
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: transparent;
+    opacity: .75;
+    border: 1px solid rgba(255,255,255,.6);
+    box-shadow: 0 0 2px #fff;
+}
+.works .works_control button.mixitup-control-active,
+.works .works_control button:hover{
+    border-color: #fff;
+    box-shadow: 0 0 2px #fff;
+    opacity: 1;
+}
+.works .works_content .mix{
+    margin-bottom: 30px;
+}
+.works .works_content .mix .work_item{
+    display: block;
+    position: relative;
+    overflow: hidden;
+
+}
+.works .works_content .mix .work_item img{
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    width: 100%;
+    height: 308px;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+.works .works_content .mix .work_item .imgMar2 {
+    margin-top: 100px;
+}
+
+.works .works_content .mix .work_item .imgMar3 {
+    margin-top: 200px;
+}
+
+img.mfp-img {
+  width:600px;
+  height:500px;
+  object-fit: cover;
+}
+.works .works_content .mix .work_item .item_caption{
+    position: absolute;
+    display: block;
+    width: 90%;
+    height: 90%;
+    top: 5%;
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,.6);
+    opacity: 0;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    border-radius: 50%;
+
+}
+.works .works_content .mix .work_item .item_caption a{
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    left: calc(50% - 45px);
+    background-color: transparent;
+
+}
+.works .works_content .mix .work_item .item_caption .popup{
+    right: calc(50% - 45px);
+    left: auto;
+    cursor: zoom-in;
+}
+.works .works_content .mix .work_item .item_caption i{
+    padding: 10px 9px 8px 8px;
+    box-shadow: 0 0 3px #fff;
+    color: #fff;
+    font-size: 1.5em;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.works .works_content .mix .work_item .item_caption .popup i{
+    padding: 9px;
+}
+.works .works_content .mix .work_item:hover img{
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    -webkit-transform: scale(2, 1.1);
+    transform: scale(2, 1.1);
+    -webkit-filter: blur(15px);
+    filter: blur(15px);
+}
+
+.works .works_content .mix .work_item .item_caption a:hover i,
+.works .works_content .mix .work_item .item_caption button:hover i{
+    background-color: #fff;
+    color: #000;
+}
+.works .works_content .mix .work_item:hover .item_caption{
+    opacity: 1;
+}
+.mfp-arrow-right::before,
+.mfp-arrow-left::before{
+    border-left-width: 0;
+    border-right-width: 0;
+}
+
+.mpf-img {
+  width:400px;
+}
 
 /* ............mediaqueries------------------------ */
 

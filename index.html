@@ -22,11 +22,11 @@
 	</head>
 	<body>
 		<!-- navbar -->
-		<audio controls autoplay>
+		<!-- <audio controls autoplay>
 			  <source src="madrush.ogg" type="audio/ogg">
 			  <source src="madrush.mp3" type="audio/mpeg">
 			Your browser does not support the audio element.
-		</audio>
+		</audio> -->
 	 <header>
 
 				 <!-- Start Preloader & ToTop Btn -->
@@ -49,7 +49,7 @@
 									 <li><a href="#about"><hr>About</a></li>
 									 <li><a href="#skills"><hr>Skills</a></li>
 									 <li>
-											<a href="#myworks"><hr>Projects
+											<a href="myworks.html"><hr>Projects
 											</a>
 								   </li>
 									 <li><a href="#contact"><hr>Contact</a></li>
@@ -57,6 +57,7 @@
 						   </ul>
 				<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 	   </nav>
+
 	  </div>
    </header>
 		<!-- navbar ends -->
@@ -72,7 +73,9 @@
 								    <a class="btn btn-primary btn-lg" href="#contact" role="button">Contact Me</a>
 								  </p>
 							</div>
-					</div>
+
+					 </div>
+
 					<!-- ......................about...................... -->
 					<div id="about_wrap">
 					 <div id="about" class="col-md-8">
@@ -85,10 +88,30 @@
 							<div class="row">
 									  <div class="col-sm-6"><button type="button" class="btn btn-primary"><a href="_resumee.docx">Dowloand CV</a></button>
 		 								</div>
-										<div id="moreinfo" class="col-sm-6"><a  href="more_info.html" target="_blank"><i>See More Information</i></a></div>
+										<div id="moreinfo" class="col-sm-6">
+
+												<!-- <a  href="more_info.html" target="_blank"><i>See More</i></a> -->
+
+										</div>
 							</div>
 					 </div>
-				  </div>
+
+					 <div style="text-align:center; width:60%; padding-top:5%; font-family: inherit">
+							<div>
+									<a href="more_info.html"><img src="img/img1.jpg" alt="" style="width:120px; height: 120px; object-fit:cover; border-radius: 50%; border: 0.6px solid white; margin-top:3%; margin-bottom:5%;"></a>
+							</div>
+							<section id="eklemeli">
+									<link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+											<h1>If you want to
+											<span
+											 class="txt-rotate"
+											 data-period="2000"
+											 data-rotate='[ "know more about me,", "go through another door,"]'></span>
+											</h1>
+											<h2>Just <b>CLICK</b> the <b>picture</b> above.</h2>
+								</section>
+							</div>
+						</div>
 					<!-- ................................skills...................... -->
 
                    <!-- make it here responsive !!!! -->
@@ -167,19 +190,23 @@
 	  						 <hr class="style2">
 								 <div class="row">
 										 <div class="left col-sm-7">
-												<input placeholder="Name">
-												<input placeholder="Email">
-												<textarea placeholder="Your Message"></textarea>
-												<button type="button" class="btn btn-primary"><a href="">Send</a></button>
+											 <form action="send.php" method="post">
+													<input placeholder="Name" name="name" type="text">
+													<input placeholder="Email" name="email" type="text">
+													<textarea placeholder="Your Message" name="comment"></textarea>
+													<button type="submit" class="btn btn-primary" name="submit" value="Submit"><a href="">Send</a></button>
+											 </form>
 										 </div>
-										 <div class="right col-sm-5">
-											 	<h3><i class="fa fa-map-marker"></i><br>Address:</h3>
-												<p>Stockton Street, San Francisco, CA</p>
-												<h3><i class="fa fa-phone"></i><br>Phone:</h3>
-												<p><a href="">+1 628 800 43 58</a></p>
-												<h3><i class="fa fa-envelope"></i><br>Email:</h3>
-												<p><a href="">baydartech@gmail.com</a></p>
-								     </div>
+
+											 <div class="right col-sm-5">
+												 	<h3><i class="fa fa-map-marker"></i><br>Address:</h3>
+													<p>Stockton Street, San Francisco, CA</p>
+													<h3><i class="fa fa-phone"></i><br>Phone:</h3>
+													<p><a href="">+1 628 800 43 58</a></p>
+													<h3><i class="fa fa-envelope"></i><br>Email:</h3>
+													<p><a href="">baydartech@gmail.com</a></p>
+									     </div>
+
 								 </div>
  						   </div>
 
